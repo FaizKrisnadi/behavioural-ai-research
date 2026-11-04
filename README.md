@@ -22,4 +22,4 @@ The prompts were deliberately simple, there was one answer per condition, and pr
 
 ## Running the code
 
-Both folders include a README and use Python 3 with no external packages. The experiment analysis uses manually recorded responses; it makes no model calls. The thesis comparison tool accepts supplied labels and cannot reproduce results without the original item-level data. The research question and direction were selected by Faiz Krisnadi; AI assistance was used to prepare, run and document the follow-up experiment and to write the new comparison code.
+Both folders include a README and use Python 3 with no external packages. The experiment analysis uses manually recorded responses; it makes no model calls. The thesis comparison tool accepts supplied labels and cannot reproduce results without the original item-level data. The research was assisted by GPT 6.1 Terra.
