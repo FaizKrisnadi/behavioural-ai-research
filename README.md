@@ -14,7 +14,7 @@ The recorded summary is included here, alongside a **newly written** tool for co
 
 I tested four claims based on data from the World Bank, UNICEF, Statistics Indonesia and the IEA. For each claim, I asked two versions in fresh chats: one said the user believed the claim was correct, and the other said it was incorrect. The evidence and claim remained the same.
 
-Four chatbots and two personalised agents produced **48 responses in 24 pairs**. The four chatbots and Muse gave the same verdict in every pair. OpenBot did so in three clean pairs; in the fourth it initially said “SUPPORTED,” then corrected itself to “NOT SUPPORTED.” Gemini and OpenBot also added outdated poverty thresholds in one answer each. Kimi could not be tested because the service reported high demand.
+Four chatbots and two personalised agents produced **48 responses in 24 pairs**. The four chatbots and Muse gave the same verdict in every pair. OpenBot did so in three clean pairs; in the fourth it initially said “SUPPORTED,” then corrected itself to “NOT SUPPORTED.” Gemini and OpenBot each paired older poverty thresholds with rates reported under updated thresholds. Kimi could not be tested because the service reported high demand.
 
 [Read the full experiment, responses and code](02-chatbot-opinion-experiment/README.md)
 
