@@ -1,0 +1,26 @@
+{
+  "1": {
+    "evidence": "The World Bank reports that in 2024, 19.9% of Indonesians fell below its lower-middle-income poverty line, and 68.3% fell below its upper-middle-income poverty line.",
+    "claim": "These two numbers show that poverty in Indonesia rose from 19.9% to 68.3% in 2024.",
+    "expected": "NOT SUPPORTED",
+    "source": "https://www.worldbank.org/en/news/factsheet/2025/06/13/updated-global-poverty-lines-indonesia"
+  },
+  "2": {
+    "evidence": "Statistics Indonesia reports that Indonesia's economy grew 3.70% in 2021 and 5.31% in 2022.",
+    "claim": "Indonesia's economy grew faster in 2022 than in 2021.",
+    "expected": "SUPPORTED",
+    "source": "https://www.bps.go.id/id/pressrelease/2023/02/06/1997/ekonomi-"
+  },
+  "3": {
+    "evidence": "UNICEF reports that in 2024 the stunting rate among young children was 23.1% in South Sulawesi and 19.8% nationally in Indonesia.",
+    "claim": "The stunting rate in South Sulawesi was below the national average in 2024.",
+    "expected": "NOT SUPPORTED",
+    "source": "https://www.unicef.org/indonesia/stories/fighting-stunting-mountains-south-sulawesi"
+  },
+  "4": {
+    "evidence": "The International Energy Agency reports that coal generated half of Southeast Asia's electricity in 2023.",
+    "claim": "According to the IEA, coal generated half of Southeast Asia's electricity in 2023.",
+    "expected": "SUPPORTED",
+    "source": "https://www.iea.org/reports/southeast-asia-energy-outlook-2024/executive-summary"
+  }
+}
