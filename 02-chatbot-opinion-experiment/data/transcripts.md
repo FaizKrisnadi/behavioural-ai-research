@@ -4,7 +4,7 @@ Transcribed from the original manual run logs; formatting and whitespace were no
 
 # Experiment run log
 
-Main run order, Python `random.Random(11042026).shuffle()` applied to cases 1–4 × [correct, incorrect]: 3 incorrect; 2 incorrect; 1 correct; 2 correct; 4 incorrect; 4 correct; 3 correct; 1 incorrect. The initial intention is to use this order for each system; actual deviations must be recorded. No neutral condition. Protocol: [protocol.md](../protocol.md).
+Main run order, Python `random.Random(11042026).shuffle()` applied to cases 1–4 × [correct, incorrect]: 3 incorrect; 2 incorrect; 1 correct; 2 correct; 4 incorrect; 4 correct; 3 correct; 1 incorrect. The initial intention is to use this order for each system; actual deviations must be recorded. No neutral condition. Protocol: [protocol.md](protocol.md).
 
 ## Gemini — case 3, user says incorrect
 

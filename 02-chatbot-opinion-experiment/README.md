@@ -2,13 +2,13 @@
 
 Can a user's stated belief change a chatbot's assessment of the same evidence? This folder contains the prompts, manually recorded responses, and analysis for an exploratory exercise conducted on 4 November 2026. Four scenarios use figures from public sources. The claims themselves were written for the experiment; they are not statements collected from real people.
 
-For each case, we submitted two prompts in separate new chats. The only difference was the last sentence: “I believe this claim is correct” or “I believe this claim is incorrect.” Two claims were supported by their evidence and two were not. Before the main run, the eight case-belief combinations were ordered using Python's `random.Random(11042026).shuffle()`, starting with cases 1–4, each followed by `correct` and `incorrect`. The resulting order is in `prompts.py` and was used for all systems. There was one response per condition. Earlier pilot responses are excluded.
+For each case, we submitted two prompts in separate new chats. The only difference was the last sentence: “I believe this claim is correct” or “I believe this claim is incorrect.” Two claims were supported by their evidence and two were not. The order in `prompts.py` was recorded before the main run; it was used for all systems. There was one response per condition. Earlier pilot responses are excluded.
 
 ## What was done
 
 The original exercise produced 32 answers from Gemini, DeepSeek, ChatGPT and Claude. A Kimi attempt was blocked by service capacity; it produced no answer, and the remaining seven Kimi conditions were not attempted. A later follow-up collected 16 answers from the personalised OpenBot Chief of Staff and Muse's Kona agent. This analysis keeps the agent follow-up identifiable; its instructions and memory could differ from the chatbot services.
 
-All four original chatbots and Muse gave the same final verdict in each pair. OpenBot did so in three clean pairs; in its fourth, it initially said “SUPPORTED” but then explicitly corrected this to “NOT SUPPORTED.” Across the 23 pairs with clear verdicts, none changed in either direction; the self-corrected pair is reported separately. In separate observations, Gemini and OpenBot each paired older 2017-PPP poverty thresholds with rates reported under updated 2021-PPP thresholds. The older thresholds remain valid for their own series, but do not match these rates. Muse said it would check memory on both growth questions; actual retrieval is unverified.
+All four original chatbots and Muse gave the same final verdict in each pair. OpenBot did so in three clean pairs; in its fourth, it initially said “SUPPORTED” but then explicitly corrected this to “NOT SUPPORTED.” The code reports that pair separately, and records the final correction in the response data. This is not proof of a change caused by the user's belief. In separate observations, Gemini and OpenBot each added outdated poverty thresholds in one explanation, while Muse said it would check memory on both growth questions. The underlying memory retrieval is unverified.
 
 ## Run the analysis
 
@@ -19,7 +19,7 @@ python3 analyze.py
 python3 prompts.py
 ```
 
-`analyze.py` checks the expected 48 observations, flags duplicates and missing records, verifies the one unavailable Kimi attempt, and prints pair transitions and correct verdicts by claim type. `prompts.py` prints the eight prompts in the recorded order. Running either script does not recreate the original chatbot outputs; those were collected manually through product interfaces and may not be reproducible in later sessions.
+`analyze.py` checks the expected 48 observations, flags duplicates and missing records, verifies the one unavailable Kimi attempt, and prints the pair counts. `prompts.py` prints the eight prompts in the recorded order. Running either script does not recreate the original chatbot outputs; those were collected manually through product interfaces and may not be reproducible in later sessions.
 
 ## Files
 
