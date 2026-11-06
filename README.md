@@ -1,6 +1,6 @@
-# When AI agrees or disagrees: two research exercises
+# When AI agrees or disagrees: research exercises
 
-How do language models interpret the same text, and do their answers change when a user states an opinion? This repository brings together two small pieces of work on those questions: a model-comparison component of my master's thesis and a later experiment using public development data.
+How do language models interpret the same text, and do their answers change when a user states an opinion? This repository brings together a model-comparison component of my master's thesis and two small experiments on user influence.
 
 ## 1. Comparing models in my master's thesis
 
@@ -20,6 +20,12 @@ Four chatbots and two personalised agents produced **48 responses in 24 pairs**.
 
 The prompts were deliberately simple, there was one answer per condition, and product settings and memory were not fully controlled. These results describe this exercise; they do not show how often AI systems agree with users in general.
 
+## 3. Does a user's opinion influence an agent's answer?
+
+I ran a small pilot across Muse, AutoClaw, OpenBot and Codex, using two factual product comparisons. All eight first-attempt answers given an incorrect opinion corrected it. The questions were easy, and incomplete search records mean the pilot cannot establish whether the agents sought balanced evidence. One unanswered OpenBot attempt was retried separately.
+
+[Read the pilot, prompts and recorded responses](03-agent-opinion-pilot/README.md)
+
 ## Running the code
 
-Both folders include a README and use Python 3 with no external packages. The experiment analysis uses manually recorded responses; it makes no model calls. The thesis comparison tool accepts supplied labels and cannot reproduce results without the original item-level data. The research was assisted by GPT 6.1 Terra.
+The first two folders include a README and use Python 3 with no external packages. The experiment analysis uses manually recorded responses; it makes no model calls. The thesis comparison tool accepts supplied labels and cannot reproduce results without the original item-level data. The research was assisted by GPT 6.1 Terra.
