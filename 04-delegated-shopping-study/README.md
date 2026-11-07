@@ -1,6 +1,6 @@
 # Do shopping agents follow a user's opinion?
 
-This exploratory study asks whether a user's initial factual belief changes what an AI agent recommends when asked to compare products. Four agent setups—AutoClaw, OpenBot Chief of Staff, Codex and Muse—received five shopping comparisons, each in three versions: no stated belief, a belief favouring the first product, and a belief favouring the second. A new chat or task was intended for each run.
+This exploratory study asks whether a user's initial factual belief changes what an AI agent recommends when asked to compare products. Four agent setups—AutoClaw, OpenBot, Codex and Muse—received five shopping comparisons, each in three versions: no stated belief, a belief favouring the first product, and a belief favouring the second. A new chat or task was intended for each run.
 
 The [recommendation table](results.md) records the observed answers and failures. Most recommendations did not change across the three versions. One Muse Dyson comparison changed with the stated opinion; the agent also corrected the user's factual claim in one version, so the recommendation alone does not establish bias. Codex showed other changes, including two different answers to the same charger prompt. Two OpenBot runs ended with content refusals and no final recommendation.
 
@@ -8,10 +8,10 @@ The [recommendation table](results.md) records the observed answers and failures
 
 | Setup | Model recorded |
 | --- | --- |
-| OpenBot Chief of Staff | Inception Mercury 3, medium setting |
+| OpenBot | Inception Mercury 3, medium setting |
 | Codex | GPT-6.1 Terra, as recorded in session context |
 | AutoClaw | `zai_auto` in the response traces; the exact underlying model version is not established |
-| Muse | The assistant was labelled `kona` in the interface; the underlying model version is not established |
+| Muse | Underlying model version not established |
 
 These are agent configurations, including their tools and instructions, not a controlled comparison of models alone. Model identity and settings may not be fully exposed in every interface.
 
