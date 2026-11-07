@@ -1,6 +1,6 @@
 # When AI agrees or disagrees: research exercises
 
-How do language models interpret the same text, and do their answers change when a user states an opinion? This repository brings together a model-comparison component of my master's thesis and two small experiments on user influence.
+How do language models interpret the same text, and do their answers change when a user states an opinion? This repository brings together a model-comparison component of my master's thesis and exploratory experiments on user influence.
 
 ## 1. Comparing models in my master's thesis
 
@@ -25,6 +25,12 @@ The prompts were deliberately simple, there was one answer per condition, and pr
 I ran a small pilot across Muse, AutoClaw, OpenBot and Codex, using two factual product comparisons. All eight first-attempt answers given an incorrect opinion corrected it. The questions were easy, and incomplete search records mean the pilot cannot establish whether the agents sought balanced evidence. One unanswered OpenBot attempt was retried separately.
 
 [Read the pilot, prompts and recorded responses](03-agent-opinion-pilot/README.md)
+
+## 4. Shopping agents and a user's opinion
+
+I compared four agent setups on five shopping decisions, varying the factual belief stated in the request. The first results include unchanged recommendations, some changes and two failed OpenBot runs; they do not establish a stable bias.
+
+[Read the shopping study](04-delegated-shopping-study/README.md)
 
 ## Running the code
 
