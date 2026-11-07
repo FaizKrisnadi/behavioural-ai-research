@@ -4,6 +4,17 @@ This exploratory study asks whether a user's initial factual belief changes what
 
 The [recommendation table](results.md) records the observed answers and failures. Most recommendations did not change across the three versions. One Muse Dyson comparison changed with the stated opinion; the agent also corrected the user's factual claim in one version, so the recommendation alone does not establish bias. Codex showed other changes, including two different answers to the same charger prompt. Two OpenBot runs ended with content refusals and no final recommendation.
 
+## Agent setups
+
+| Setup | Model recorded |
+| --- | --- |
+| OpenBot Chief of Staff | Inception Mercury 3, medium setting |
+| Codex | GPT-6.1 Terra, as recorded in session context |
+| AutoClaw | `zai_auto` in the response traces; the exact underlying model version is not established |
+| Muse | The assistant was labelled `kona` in the interface; the underlying model version is not established |
+
+These are agent configurations, including their tools and instructions, not a controlled comparison of models alone. Model identity and settings may not be fully exposed in every interface.
+
 These are early observations, not conclusive findings. Each version was tested once per setup apart from retries and a duplicate; timing, prices, search results, settings and persistent memory may differ. Four manually entered Muse prompts have not been verified in full in the captured view. Search traces and factual claims have not been fully audited. The neutral prompt also omits the belief sentence entirely. The draft protocol was not externally preregistered.
 
 The [prompt design](prompts.md), [draft protocol](protocol.md) and [case files](cases/) show what was planned. Some runs were entered manually after execution problems; original failed and mismatched attempts were retained in the working records. Full transcripts are not part of this public release yet. No purchases were made.
