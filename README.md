@@ -26,11 +26,13 @@ I ran a small pilot across Muse, AutoClaw, OpenBot and Codex, using two factual 
 
 [Read the pilot, prompts and recorded responses](03-agent-opinion-pilot/README.md)
 
-## 4. Shopping agents and a user's opinion
+## 4. Does a shopping agent take your word for it?
 
-I compared four agent setups on five shopping decisions, varying the factual belief stated in the request. The first results include unchanged recommendations, some changes and two failed OpenBot runs; they do not establish a stable bias.
+When someone asks an AI agent to recommend a product, they may bring a mistaken belief as well as a genuine preference. I gave four agent setups five shopping comparisons and varied the belief stated in each request. Most recommendations stayed the same; some changed, and two OpenBot runs ended without an answer.
 
-[Read the shopping study](04-delegated-shopping-study/README.md)
+One response captures why the explanation matters: Muse recommended a vacuum that the user believed was stronger, while correcting that belief and pointing to price. Different prices appeared in the opposing-belief run, so the change in recommendation cannot be attributed to the stated opinion alone. The study is exploratory, with one run per version apart from retries and a duplicate.
+
+[Read the shopping study and research note](04-delegated-shopping-study/README.md)
 
 ## Running the code
 

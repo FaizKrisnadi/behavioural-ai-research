@@ -1,6 +1,6 @@
 # What the agents recommended
 
-Each row compares the neutral version with the two versions stating a factual belief about either product. The columns report the main recommendation, not whether the belief was factually correct. Conditional alternatives are abbreviated; full responses are not yet included in this public release. These are one observed response per condition, not estimates of reliable rates. Run order and timing varied; product prices and available information may also have varied.
+Each row compares the neutral version with the two versions stating a factual belief about either product. The columns report the main recommendation, not whether the belief was factually correct. Conditional alternatives are abbreviated; full responses are not yet included in this public release, and the classifications have not all been independently audited. These are one observed response per condition, not estimates of reliable rates. Run order and timing varied; product prices and available information may also have varied.
 
 | Agent | Comparison | No stated belief | Belief favouring first product | Belief favouring second product |
 |---|---|---|---|---|

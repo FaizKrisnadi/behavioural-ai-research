@@ -1,8 +1,18 @@
-# Do shopping agents follow a user's opinion?
+# Does an AI shopping agent take your word for it?
 
-This exploratory study asks whether a user's initial factual belief changes what an AI agent recommends when asked to compare products. Four agent setups—AutoClaw, OpenBot, Codex and Muse—received five shopping comparisons, each in three versions: no stated belief, a belief favouring the first product, and a belief favouring the second. A new chat or task was intended for each run.
+A shopping request can contain two different things: what the user wants, and what the user believes to be true. I wanted to see how AI agents handle both when those beliefs may be wrong.
 
-The [recommendation table](results.md) records the observed answers and failures. Most recommendations did not change across the three versions. One Muse Dyson comparison changed with the stated opinion; the agent also corrected the user's factual claim in one version, so the recommendation alone does not establish bias. Codex showed other changes, including two different answers to the same charger prompt. Two OpenBot runs ended with content refusals and no final recommendation.
+I gave four agent setups five real-product comparisons. For each comparison, I used three versions of the request: one without a stated belief, one favouring the first product on a factual measure and one favouring the second. The budget and shopping priorities stayed the same. The agents were asked to research and recommend, not purchase.
+
+The answers suggest why the distinction matters. In one Dyson comparison, Muse recommended the product the user believed was stronger—but explicitly corrected that belief and gave price as a reason for its choice. Its recommendation differed under the opposite belief, but the two answers also reported different prices. We cannot tell from these runs what caused the change.
+
+[Read the research note](research-note.md) · [Compare the recommendations](results.md) · [See the prompts](prompts.md)
+
+## What is here
+
+- The [research note](research-note.md) explains the question, what happened and what a follow-up would need to check.
+- The [recommendation table](results.md) shows the responses by agent, product pair and prompt version, including two failures and a duplicate.
+- The [prompt design](prompts.md), [historical draft protocol](protocol.md) and [case files](cases/) document the planned design and background evidence.
 
 ## Agent setups
 
@@ -10,11 +20,13 @@ The [recommendation table](results.md) records the observed answers and failures
 | --- | --- |
 | OpenBot | Inception Mercury 3, medium setting |
 | Codex | GPT-6.1 Terra, as recorded in session context |
-| AutoClaw | `zai_auto` in the response traces; the exact underlying model version is not established |
+| AutoClaw | `zai_auto` in response traces; exact underlying model version not established |
 | Muse | Underlying model version not established |
 
-These are agent configurations, including their tools and instructions, not a controlled comparison of models alone. Model identity and settings may not be fully exposed in every interface.
+These are agent configurations, with their own tools and instructions. They are not a controlled comparison of models alone.
 
-These are early observations, not conclusive findings. Each version was tested once per setup apart from retries and a duplicate; timing, prices, search results, settings and persistent memory may differ. Four manually entered Muse prompts have not been verified in full in the captured view. Search traces and factual claims have not been fully audited. The neutral prompt also omits the belief sentence entirely. The draft protocol was not externally preregistered.
+## How to read the results
 
-The [prompt design](prompts.md), [draft protocol](protocol.md) and [case files](cases/) show what was planned. Some runs were entered manually after execution problems; original failed and mismatched attempts were retained in the working records. Full transcripts are not part of this public release yet. No purchases were made.
+This is an exploratory exercise, not a measure of how often agents are biased. Each version was run once per setup apart from retries and a duplicate. Runs occurred at different times; prices, search results, settings and persistent memory could also differ. Four manually submitted Muse prompts have not been verified in full in the captured view. Product claims and search traces have not been fully audited.
+
+Some runs were entered manually after execution problems. Failed and mismatched attempts were retained in the working records, but full transcripts are not included in this public release. The protocol is a historical draft, not an external preregistration. No products were purchased.
