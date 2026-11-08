@@ -1,10 +1,12 @@
-# Does an AI shopping agent take your word for it?
+# Can an AI agent check your assumptions before making a decision?
+
+*An exploratory study of user beliefs, evidence and shopping recommendations*
 
 When people ask an AI agent to help them shop, they often bring an opinion into the conversation. They might believe one vacuum is more powerful or one washing machine is cheaper to run. A useful agent needs to take their priorities seriously while checking whether their factual assumptions hold up.
 
 I explored that tension by asking six agent setups to compare real products. I gave each the same five shopping decisions in three versions: one stated no belief about the products; one said the user believed the first product was better on a particular factual measure; and one expressed the corresponding belief about the second. The budget and shopping priorities stayed the same. Each request asked the agent to research the options, explain its recommendation and cite sources. None asked it to make a purchase.
 
-The question was whether the stated belief would be accompanied by a different answer. The more interesting lesson was that **the product an agent recommends and the belief it accepts are two different things**.
+I wanted to see whether the stated belief would be accompanied by a different answer. To understand the answer, though, it is not enough to record the product an agent recommends. We also need to look at whether it accepted the user's claim and what it gave as its reason.
 
 ## A recommendation can match an opinion for another reason
 
@@ -22,6 +24,12 @@ The [full recommendation table](results.md) sets out the six setups, five produc
 
 OpenCode with Inkling 2 Small kept the same recommendation across all three versions of the Levoit, Sony and charger comparisons, while its Dyson and washer recommendations varied. OpenBot with NVIDIA Nemotron 3.5 Super VL kept the same recommendation across the Levoit, Dyson and charger comparisons; it declined to recommend either product in one Sony and one washer run. In the Sony comparison, OpenCode gave a recommendation after extensive tool use in a different version. The prompts and environments prevent a controlled comparison of their search performance; the [execution notes](execution-notes.md) explain what happened.
 
+## What makes the advice worth relying on?
+
+The comparison points to several questions. Did the agent check the claim about the product, or repeat it? Did its recommendation change? What evidence did it offer, and can we see how it found that evidence? Did it finish the task at all? These questions concern different parts of reliable advice. A recommendation can be reasonable even when it matches a mistaken belief; an answer with a confident explanation may still rely on evidence that needs checking.
+
+The runs give us final answers and some records of tool use, but they do not answer all of these questions yet. I have not checked every product claim or source, and the study did not ask people whether they trusted the agents or acted on their advice.
+
 ## What this study can and cannot tell us
 
 This is a small exploratory exercise. Apart from retries and the duplicate, each setup received one run of each version. The OpenCode and OpenBot / Nemotron runs happened later than the other four, with one prior-context chat and one prompt containing an extra code-fence marker. The runs happened at different times, and some were submitted manually after execution problems. Prices and available pages could change; tool access, agent instructions, model settings and persistent memory could also differ. A new chat does not guarantee a blank memory. In four manually submitted Muse chats, the captured view did not expose the complete prompt text, so exact matching remains unverified.
@@ -34,4 +42,4 @@ For these reasons, the table should not be read as a ranking of agents or a meas
 
 I would repeat each prompt in separate sessions, including repeated runs of the exact same version. That would show how much recommendations vary even when the user's words stay the same. I would also preserve the actual searches, pages and final explanations where the interface permits, and assess separately whether the agent corrected a false factual belief, what it recommended, and why.
 
-The broader question is not limited to shopping. As people delegate more decisions, an agent can be responsive to a user's priorities while still challenging an unsupported assumption. Studying both parts of that interaction is more useful than treating every matching recommendation as agreement.
+The same question could arise in an urban decision. A planner might ask an AI system to compare neighbourhoods while assuming that one has fewer public facilities or greater flood exposure. The system would need to examine the claim alongside the quality and completeness of the data available to it. The shopping exercise does not test such a system or an urban dataset; an urban study would need its own data, comparisons and checks. It does, however, offer a starting point for asking how questionable assumptions and uncertain evidence enter AI-assisted decisions.

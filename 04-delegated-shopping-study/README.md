@@ -2,6 +2,8 @@
 
 A shopping request can contain two different things: what the user wants, and what the user believes to be true. I wanted to see how AI agents handle both when those beliefs may be wrong.
 
+This is a starting point for a broader question about reliable AI advice: can an agent check an assumption, explain its recommendation and show the evidence behind it? The study examines shopping decisions. A possible follow-up using urban data would be a separate study.
+
 I gave six agent setups five real-product comparisons. For each comparison, I used three versions of the request: one without a stated belief, one favouring the first product on a factual measure and one favouring the second. The budget and shopping priorities stayed the same. The agents were asked to research and recommend, not purchase.
 
 The answers suggest why the distinction matters. In one Dyson comparison, Muse recommended the product the user believed was stronger—but explicitly corrected that belief and gave price as a reason for its choice. Its recommendation differed under the opposite belief, but the two answers also reported different prices. We cannot tell from these runs what caused the change.
