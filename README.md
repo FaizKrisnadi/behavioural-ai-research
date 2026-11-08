@@ -32,6 +32,8 @@ When someone asks an AI agent to recommend a product, they may bring a mistaken 
 
 One response captures why the explanation matters: Muse recommended a vacuum that the user believed was stronger, while correcting that belief and pointing to price. Different prices appeared in the opposing-belief run, so the change in recommendation cannot be attributed to the stated opinion alone. The study is exploratory, with one run per version apart from retries and a duplicate.
 
+Two more agent setups were tested later; their results and differences in execution are recorded separately.
+
 [Read the shopping study and research note](04-delegated-shopping-study/README.md)
 
 ## Running the code

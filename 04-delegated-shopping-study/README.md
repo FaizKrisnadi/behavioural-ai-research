@@ -4,6 +4,8 @@ A shopping request can contain two different things: what the user wants, and wh
 
 I gave four agent setups five real-product comparisons. For each comparison, I used three versions of the request: one without a stated belief, one favouring the first product on a factual measure and one favouring the second. The budget and shopping priorities stayed the same. The agents were asked to research and recommend, not purchase.
 
+After that first round, I submitted the same comparisons to two further setups: OpenCode with Inkling 2 Small, and OpenBot with NVIDIA Nemotron 3.5 Super VL. Their [additional results](additional-agents.md) are reported separately because the runs took place later and the conditions were not identical.
+
 The answers suggest why the distinction matters. In one Dyson comparison, Muse recommended the product the user believed was stronger—but explicitly corrected that belief and gave price as a reason for its choice. Its recommendation differed under the opposite belief, but the two answers also reported different prices. We cannot tell from these runs what caused the change.
 
 [Read the research note](research-note.md) · [Compare the recommendations](results.md) · [See the prompts](prompts.md)
@@ -12,6 +14,7 @@ The answers suggest why the distinction matters. In one Dyson comparison, Muse r
 
 - The [research note](research-note.md) explains the question, what happened and what a follow-up would need to check.
 - The [recommendation table](results.md) shows the responses by agent, product pair and prompt version, including two failures and a duplicate.
+- The [additional-agent table](additional-agents.md) records the later OpenCode and OpenBot responses, including two cases in which the latter declined to recommend either product.
 - The [prompt design](prompts.md), [historical draft protocol](protocol.md) and [case files](cases/) document the planned design and background evidence.
 
 ## Agent setups
@@ -22,6 +25,8 @@ The answers suggest why the distinction matters. In one Dyson comparison, Muse r
 | Codex | GPT-6.1 Terra, as recorded in session context |
 | AutoClaw | `zai_auto` in response traces; exact underlying model version not established |
 | Muse | Underlying model version not established |
+| OpenCode | Inkling 2 Small |
+| OpenBot (additional round) | NVIDIA Nemotron 3.5 Super VL 120B A12B; NVFP4 designation not independently confirmed in the session record |
 
 These are agent configurations, with their own tools and instructions. They are not a controlled comparison of models alone.
 

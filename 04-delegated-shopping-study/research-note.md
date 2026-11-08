@@ -20,6 +20,8 @@ Muse's Dyson recommendation changed between the two belief versions. Its recomme
 
 The [full recommendation table](results.md) sets out the four setups, five product pairs, three prompt versions, refusals and duplicate. It is a reading of the final recommendations; it is not yet an audit of the correctness of every claim or the full search process.
 
+After the first round, the same questions were submitted to OpenCode with Inkling 2 Small and a second OpenBot configuration using NVIDIA Nemotron 3.5 Super VL. Their [results and execution notes](additional-agents.md) are separate: one OpenCode prompt had prior conversation context, one OpenBot prompt included an extra code-fence marker, and the runs occurred later. In the Sony comparison, the OpenBot configuration declined to recommend either model in one version, while OpenCode gave a recommendation after extensive tool use in another. Those different prompts and environments prevent a controlled comparison of their search performance.
+
 ## What this study can and cannot tell us
 
 This is a small exploratory exercise. Apart from retries and the duplicate, each setup received one run of each version. The runs happened at different times, and some were submitted manually after execution problems. Prices and available pages could change; tool access, agent instructions, model settings and persistent memory could also differ. A new chat does not guarantee a blank memory. In four manually submitted Muse chats, the captured view did not expose the complete prompt text, so exact matching remains unverified.
