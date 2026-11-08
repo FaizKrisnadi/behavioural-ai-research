@@ -14,6 +14,7 @@ The answers suggest why the distinction matters. In one Dyson comparison, Muse r
 
 - The [research note](research-note.md) explains the question, what happened and what a follow-up would need to check.
 - The [recommendation table](results.md) shows the responses by agent, product pair and prompt version, including two failures and a duplicate.
+- [Muse product links](muse-product-links.md) lists product cards shown in its 15 study chats.
 - The [execution notes](execution-notes.md) describe two Sony runs and their tool-access limitations.
 - The [prompt design](prompts.md), [historical draft protocol](protocol.md) and [case files](cases/) document the planned design and background evidence.
 
@@ -32,6 +33,6 @@ These are agent configurations, with their own tools and instructions. They are 
 
 ## How to read the results
 
-This is an exploratory exercise, not a measure of how often agents are biased. Each version was run once per setup apart from retries and a duplicate. The OpenCode and OpenBot / Nemotron runs occurred later than the other four; one prompt had prior chat context and another included an extra code-fence marker. Runs occurred at different times; prices, search results, settings and persistent memory could also differ. The exact wording of four Muse prompts still needs verification. Product claims and search traces have not been fully audited.
+This is an exploratory exercise, not a measure of how often agents are biased. Each version was run once per setup apart from retries and a duplicate. The OpenCode and OpenBot / Nemotron runs occurred later than the other four; one prompt had prior chat context and another included an extra code-fence marker. Runs occurred at different times; prices, search results, settings and persistent memory could also differ. Four Muse prompts were visually checked against the planned wording, rather than compared byte-for-byte. Product claims and search traces have not been fully audited.
 
 Some runs were entered manually after execution problems. Full transcripts are not yet included; failed and mismatched attempts were retained. The protocol is a historical draft, not an external preregistration. No products were purchased.

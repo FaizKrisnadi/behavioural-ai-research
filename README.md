@@ -36,6 +36,8 @@ The six setups were tested at different times, and the study documents differenc
 
 [Read the shopping study and research note](04-delegated-shopping-study/README.md)
 
+[Research handoff for continuing this work](HANDOFF.md)
+
 ## Running the code
 
 The first two folders include a README and use Python 3 with no external packages. The experiment analysis uses manually recorded responses; it makes no model calls. The thesis comparison tool accepts supplied labels and cannot reproduce results without the original item-level data. The research was assisted by GPT 6.1 Terra.
