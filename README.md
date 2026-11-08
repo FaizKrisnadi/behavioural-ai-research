@@ -28,11 +28,11 @@ I ran a small pilot across Muse, AutoClaw, OpenBot and Codex, using two factual 
 
 ## 4. Does a shopping agent take your word for it?
 
-When someone asks an AI agent to recommend a product, they may bring a mistaken belief as well as a genuine preference. I gave four agent setups five shopping comparisons and varied the belief stated in each request. Most recommendations stayed the same; some changed, and two OpenBot runs ended without an answer.
+When someone asks an AI agent to recommend a product, they may bring a mistaken belief as well as a genuine preference. I gave six agent setups five shopping comparisons and varied the belief stated in each request. Most recommendations stayed the same; some changed, and two OpenBot runs ended without an answer.
 
 One response captures why the explanation matters: Muse recommended a vacuum that the user believed was stronger, while correcting that belief and pointing to price. Different prices appeared in the opposing-belief run, so the change in recommendation cannot be attributed to the stated opinion alone. The study is exploratory, with one run per version apart from retries and a duplicate.
 
-Two more agent setups were tested later; their results and differences in execution are recorded separately.
+The six setups were tested at different times, and the study documents differences in their execution.
 
 [Read the shopping study and research note](04-delegated-shopping-study/README.md)
 
