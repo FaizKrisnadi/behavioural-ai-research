@@ -1,4 +1,4 @@
-# Does an AI shopping agent take your word for it?
+# Can an AI agent check your assumptions before making a decision?
 
 A shopping request can contain two different things: what the user wants, and what the user believes to be true. I wanted to see how AI agents handle both when those beliefs may be wrong.
 

@@ -26,7 +26,7 @@ I ran a small pilot across Muse, AutoClaw, OpenBot and Codex, using two factual 
 
 [Read the pilot, prompts and recorded responses](03-agent-opinion-pilot/README.md)
 
-## 4. Does a shopping agent take your word for it?
+## 4. Can an AI agent check your assumptions before making a decision?
 
 When someone asks an AI agent to recommend a product, they may bring a mistaken belief as well as a genuine preference. I gave six agent setups five shopping comparisons and varied the belief stated in each request. Most recommendations stayed the same; some changed, and two OpenBot runs ended without an answer.
 
