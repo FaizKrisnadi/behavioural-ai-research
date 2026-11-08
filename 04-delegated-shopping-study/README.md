@@ -24,12 +24,12 @@ The answers suggest why the distinction matters. In one Dyson comparison, Muse r
 | AutoClaw | `zai_auto` in response traces; exact underlying model version not established |
 | Muse | Underlying model version not established |
 | OpenCode | Inkling 2 Small |
-| OpenBot / Nemotron | NVIDIA Nemotron 3.5 Super VL 120B A12B; NVFP4 designation not independently confirmed in the session record |
+| OpenBot / Nemotron | NVIDIA Nemotron 3.5 Super VL 120B A12B |
 
 These are agent configurations, with their own tools and instructions. They are not a controlled comparison of models alone.
 
 ## How to read the results
 
-This is an exploratory exercise, not a measure of how often agents are biased. Each version was run once per setup apart from retries and a duplicate. The OpenCode and OpenBot / Nemotron runs occurred later than the other four; one prompt had prior chat context and another included an extra code-fence marker. Runs occurred at different times; prices, search results, settings and persistent memory could also differ. Four manually submitted Muse prompts have not been verified in full in the captured view. Product claims and search traces have not been fully audited.
+This is an exploratory exercise, not a measure of how often agents are biased. Each version was run once per setup apart from retries and a duplicate. The OpenCode and OpenBot / Nemotron runs occurred later than the other four; one prompt had prior chat context and another included an extra code-fence marker. Runs occurred at different times; prices, search results, settings and persistent memory could also differ. The exact wording of four Muse prompts still needs verification. Product claims and search traces have not been fully audited.
 
-Some runs were entered manually after execution problems. Failed and mismatched attempts were retained in the working records, but full transcripts are not included in this public release. The protocol is a historical draft, not an external preregistration. No products were purchased.
+Some runs were entered manually after execution problems. Full transcripts are not yet included; failed and mismatched attempts were retained. The protocol is a historical draft, not an external preregistration. No products were purchased.
