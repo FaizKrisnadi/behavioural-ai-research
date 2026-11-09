@@ -1,43 +1,31 @@
-# When AI agrees or disagrees: research exercises
+# Behavioural AI Research
 
-How do language models interpret the same text, and do their answers change when a user states an opinion? This repository brings together a model-comparison component of my master's thesis and exploratory experiments on user influence.
+What happens when we rely on AI to interpret evidence or help us make a decision? This repository brings together work from my master's thesis and two experiments that grew out of that question.
 
-## 1. Comparing models in my master's thesis
+In my thesis, I used AI-assisted coding to study how Indonesian elites discuss Chinese development finance and foreign investment. Comparing model labels raised a practical question: different systems can classify the same article differently, even when they use the same codebook.
 
-My thesis studied how Indonesian elites discuss Chinese development finance and foreign direct investment. One component used AI-assisted analysis of news articles. The thesis repository records agreement between ChatGPT, Claude and Gemini on a 100-article validation sample. For example, the reported ChatGPT–Claude agreement was 72% for stance and 81% for frame.
+That led me to test another source of variation: **does the opinion a user gives an AI affect its answer?** I started with simple claims about development data, then moved to agents researching products and making recommendations.
 
-[Read the thesis comparison and its code](01-thesis-model-comparison/README.md)
+## Projects
 
-The recorded summary is included here, alongside a **newly written** tool for comparing labels. The original item-level validation labels and model-calling code are not included, so this tool has not reproduced the original thesis results. The existing [thesis repository](https://github.com/FaizKrisnadi/master-thesis) provides further background, but its numbered scripts are placeholders and must not be run as a reproduction pipeline; several can overwrite outputs.
+### [1. Comparing labels in my master's thesis](01-thesis-model-comparison/README.md)
 
-## 2. Does a user's opinion change an AI's answer?
+A recorded summary compares how ChatGPT, Claude and Gemini labelled a sample of 100 articles. This folder includes that summary and a later tool for comparing labels. The original article-level labels and model-calling code are not included, so the tool does not reproduce the thesis results.
 
-I tested four claims based on data from the World Bank, UNICEF, Statistics Indonesia and the IEA. For each claim, I asked two versions in fresh chats: one said the user believed the claim was correct, and the other said it was incorrect. The evidence and claim remained the same.
+### [2. Does a user's opinion change an AI's verdict?](02-chatbot-opinion-experiment/README.md)
 
-Four chatbots and two personalised agents produced **48 responses in 24 pairs**. The four chatbots and Muse gave the same verdict in every pair. OpenBot did so in three clean pairs; in the fourth it initially said “SUPPORTED,” then corrected itself to “NOT SUPPORTED.” Gemini and OpenBot each paired older poverty thresholds with rates reported under updated thresholds. Kimi could not be tested because the service reported high demand.
+I gave six AI systems four claims with supporting evidence. For each claim, I asked once saying I thought it was correct and once saying I thought it was incorrect. Their final verdicts stayed the same across the paired requests, although one answer initially gave the wrong verdict before correcting itself. The questions were simple and each version was tested once.
 
-[Read the full experiment, responses and code](02-chatbot-opinion-experiment/README.md)
+### [3. A first test with AI agents](03-agent-opinion-pilot/README.md)
 
-The prompts were deliberately simple, there was one answer per condition, and product settings and memory were not fully controlled. These results describe this exercise; they do not show how often AI systems agree with users in general.
+Before testing open-ended decisions, I asked four agent setups two straightforward product questions. All 23 recorded first attempts got the specific comparisons right; one unanswered attempt was later retried. The pilot tested the procedure, not whether agents are generally free from bias.
 
-## 3. Does a user's opinion influence an agent's answer?
+### [4. Can an AI agent check your assumptions before making a decision?](04-delegated-shopping-study/README.md)
 
-I ran a small pilot across Muse, AutoClaw, OpenBot and Codex, using two factual product comparisons. All eight first-attempt answers given an incorrect opinion corrected it. The questions were easy, and incomplete search records mean the pilot cannot establish whether the agents sought balanced evidence. One unanswered OpenBot attempt was retried separately.
+Six agent setups compared products for a shopper. Each decision had three versions: one with no stated belief and two with opposing factual beliefs. In one comparison, an agent recommended the product the user mentioned while correcting the user's claim about it. The result shows why the explanation matters as much as the final choice. The study is exploratory: timing, available information and agent settings varied, and some runs failed or were repeated.
 
-[Read the pilot, prompts and recorded responses](03-agent-opinion-pilot/README.md)
+## Code and records
 
-## 4. Can an AI agent check your assumptions before making a decision?
+Each project page explains what is available and how to inspect it. The first two projects include Python scripts; their analyses use recorded information and do not make model calls. The shopping study includes the prompts, a recommendation table and selected product links. Its full transcripts are not yet public, and the recommendation classifications still need further checking.
 
-When someone asks an AI agent to recommend a product, they may bring a mistaken belief as well as a genuine preference. I gave six agent setups five shopping comparisons and varied the belief stated in each request. Most recommendations stayed the same; some changed, and two OpenBot runs ended without an answer.
-
-One response captures why the explanation matters: Muse recommended a vacuum that the user believed was stronger, while correcting that belief and pointing to price. Different prices appeared in the opposing-belief run, so the change in recommendation cannot be attributed to the stated opinion alone. The study is exploratory, with one run per version apart from retries and a duplicate.
-
-The six setups were tested at different times, and the study documents differences in their execution.
-
-[Read the shopping study and research note](04-delegated-shopping-study/README.md)
-
-[Research handoff for continuing this work](HANDOFF.md)
-
-## Running the code
-
-The first two folders include a README and use Python 3 with no external packages. The experiment analysis uses manually recorded responses; it makes no model calls. The thesis comparison tool accepts supplied labels and cannot reproduce results without the original item-level data. The research was assisted by GPT 6.1 Terra.
+AI tools assisted with the research and preparation of this repository. The records and limitations are described in each project.

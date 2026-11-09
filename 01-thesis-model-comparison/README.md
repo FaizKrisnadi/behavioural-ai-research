@@ -38,4 +38,4 @@ To run the checks:
 python3 -m unittest discover -s tests -v
 ```
 
-The checks use synthetic labels only. The work was prepared with AI assistance and should be reviewed by the researcher before sharing or drawing conclusions.
+The checks use invented labels; they do not test or reproduce the thesis results. The companion tool was prepared with AI assistance.

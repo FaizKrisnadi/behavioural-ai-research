@@ -13,7 +13,7 @@ The answers suggest why the distinction matters. In one Dyson comparison, Muse r
 ## What is here
 
 - The [research note](research-note.md) explains the question, what happened and what a follow-up would need to check.
-- The [recommendation table](results.md) shows the responses by agent, product pair and prompt version, including two failures and a duplicate.
+- The [recommendation table](results.md) shows the responses by agent, product pair and prompt version, including two failed runs, two answers without a recommendation and a duplicate.
 - [Muse product links](muse-product-links.md) lists product cards shown in its 15 study chats.
 - The [execution notes](execution-notes.md) describe two Sony runs and their tool-access limitations.
 - The [prompt design](prompts.md), [historical draft protocol](protocol.md) and [case files](cases/) document the planned design and background evidence.
